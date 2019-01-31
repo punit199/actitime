@@ -2,32 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26798" started-at="2019-01-30T12:26:45Z" finished-at="2019-01-30T12:27:12Z">
+  <suite name="Suite" duration-ms="29327" started-at="2019-01-31T06:42:28Z" finished-at="2019-01-31T06:42:57Z">
     <groups>
+      <group name="smoke">
+        <method signature="VerifingHomePage.run()[pri:0, instance:scenario.VerifingHomePage@91161c7]" name="run" class="scenario.VerifingHomePage"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="26798" started-at="2019-01-30T12:26:45Z" finished-at="2019-01-30T12:27:12Z">
-      <class name="scenario.Example">
-        <test-method status="PASS" signature="conficBc()[pri:0, instance:scenario.Example@77caeb3e]" name="conficBc" is-config="true" duration-ms="7821" started-at="2019-01-30T17:56:45Z" finished-at="2019-01-30T17:56:53Z">
+    <test name="Test" duration-ms="29327" started-at="2019-01-31T06:42:28Z" finished-at="2019-01-31T06:42:57Z">
+      <class name="scenario.VerifingHomePage">
+        <test-method status="PASS" signature="conficBc()[pri:0, instance:scenario.VerifingHomePage@91161c7]" name="conficBc" is-config="true" duration-ms="4997" started-at="2019-01-31T12:12:28Z" finished-at="2019-01-31T12:12:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficBc -->
-        <test-method status="PASS" signature="conficBm()[pri:0, instance:scenario.Example@77caeb3e]" name="conficBm" is-config="true" duration-ms="9341" started-at="2019-01-30T17:56:53Z" finished-at="2019-01-30T17:57:02Z">
+        <test-method status="PASS" signature="conficBm()[pri:0, instance:scenario.VerifingHomePage@91161c7]" name="conficBm" is-config="true" duration-ms="11951" started-at="2019-01-31T12:12:33Z" finished-at="2019-01-31T12:12:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficBm -->
-        <test-method status="PASS" signature="run()[pri:0, instance:scenario.Example@77caeb3e]" name="run" duration-ms="6" started-at="2019-01-30T17:57:02Z" finished-at="2019-01-30T17:57:02Z">
+        <test-method status="PASS" signature="run()[pri:0, instance:scenario.VerifingHomePage@91161c7]" name="run" duration-ms="8844" started-at="2019-01-31T12:12:45Z" finished-at="2019-01-31T12:12:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
-        <test-method status="PASS" signature="conficAm()[pri:0, instance:scenario.Example@77caeb3e]" name="conficAm" is-config="true" duration-ms="7227" started-at="2019-01-30T17:57:02Z" finished-at="2019-01-30T17:57:10Z">
+        <test-method status="PASS" signature="conficAm()[pri:0, instance:scenario.VerifingHomePage@91161c7]" name="conficAm" is-config="true" duration-ms="1372" started-at="2019-01-31T12:12:54Z" finished-at="2019-01-31T12:12:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficAm -->
-        <test-method status="PASS" signature="conficAc()[pri:0, instance:scenario.Example@77caeb3e]" name="conficAc" is-config="true" duration-ms="2340" started-at="2019-01-30T17:57:10Z" finished-at="2019-01-30T17:57:12Z">
+        <test-method status="PASS" signature="conficAc()[pri:0, instance:scenario.VerifingHomePage@91161c7]" name="conficAc" is-config="true" duration-ms="2142" started-at="2019-01-31T12:12:55Z" finished-at="2019-01-31T12:12:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficAc -->
-      </class> <!-- scenario.Example -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- scenario.VerifingHomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

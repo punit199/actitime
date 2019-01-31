@@ -20,7 +20,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	Fileutil data = new Fileutil();
 	WebDriverUtil util = new WebDriverUtil();
-	@BeforeTest
+	@BeforeTest(groups= {"smoke"})
 	public void conficBc() throws Throwable
 	{
 		Properties pobj =data.getPropertyFileData();	
@@ -37,7 +37,7 @@ public class BaseClass {
 			driver = new FirefoxDriver();
 		}
 	}
-	@BeforeMethod()
+	@BeforeMethod(groups= {"smoke"})
 	public void conficBm() throws Throwable
 	{
 		Properties pobj =data.getPropertyFileData();
@@ -48,9 +48,10 @@ public class BaseClass {
 		util.waitforpageLoad(50);
 		driver.get(url);
 		LoginPage lg = PageFactory.initElements(driver,LoginPage.class);
+		lg.verifyTheLoginpage();
 		lg.loginToApp(user, pass);
 	}
-	@AfterMethod()
+	@AfterMethod(groups= {"smoke"})
 	public void conficAm() 
 	{
 		System.out.println("logout");
@@ -58,7 +59,7 @@ public class BaseClass {
 		hp.logoutApp();
 		
 	}
-	@AfterTest
+	@AfterTest(groups= {"smoke"})
 	public void conficAc()
 	{
 		driver.close();
